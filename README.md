@@ -5,6 +5,8 @@ vue-bing-maps
 
 > A Vue.js Bing Maps v8 Wrapper Library
 
+[![npm version](https://badge.fury.io/js/vue-bing-maps.svg)](https://badge.fury.io/js/vue-bing-maps)
+
 Installation
 ------------
 
