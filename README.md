@@ -5,6 +5,13 @@ vue-bing-maps
 
 > A Vue.js Bing Maps v8 Wrapper Library
 
+Installation
+------------
+
+### Using npm
+
+`npm i --save vue-bing-maps`
+
 Usage
 -----
 
