@@ -57,6 +57,7 @@ const browserConfig = Object.assign({}, config, {
         path: path.resolve(__dirname, './dist'),
         publicPath: './dist',
         library: 'VueBingMaps',
+        libraryTarget: 'umd',
         filename: 'vue-bing-maps-' + package.version + '.js'
     }
 });
@@ -73,7 +74,9 @@ const packageConfig = Object.assign({}, config, {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: './dist',
-        filename: 'index.js'
+        filename: 'index.js',
+        library: 'VueBingMaps',
+        libraryTarget: 'umd'
     }
 });
 

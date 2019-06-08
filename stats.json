@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.29.1",
-  "hash": "a8db7f3a9a0146b01592",
+  "hash": "5ed362467eb666a01b97",
   "publicPath": "./dist",
   "outputPath": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/dist",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
   "assets": [
     {
       "name": "index.js",
-      "size": 21711,
+      "size": 21948,
       "chunks": [
         0
       ],
@@ -59,7 +59,7 @@
       "files": [
         "index.js"
       ],
-      "hash": "1600dbc4f88ff1460e7d",
+      "hash": "27394decb0c49612e688",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -683,15 +683,6 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "../utils.js",
-                  "loc": "9:0-32"
-                },
-                {
-                  "moduleId": null,
                   "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
                   "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
                   "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
@@ -704,6 +695,15 @@
                   "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
                   "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
                   "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../utils.js",
+                  "loc": "9:0-32"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
                   "type": "harmony side effect evaluation",
                   "userRequest": "../utils.js",
                   "loc": "9:0-32"
@@ -1344,18 +1344,18 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
                   "type": "harmony side effect evaluation",
                   "userRequest": "../mixins/component-base.vue",
                   "loc": "8:0-57"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+                  "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+                  "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
                   "type": "harmony side effect evaluation",
                   "userRequest": "../mixins/component-base.vue",
                   "loc": "8:0-57"
@@ -1852,18 +1852,18 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
-                  "module": "./src/components/bing-layer-component.vue",
-                  "moduleName": "./src/components/bing-layer-component.vue",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
+                  "module": "./src/components/bing-pushpin-component.vue",
+                  "moduleName": "./src/components/bing-pushpin-component.vue",
                   "type": "harmony side effect evaluation",
                   "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
                   "loc": "7:0-90"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
-                  "module": "./src/components/bing-pushpin-component.vue",
-                  "moduleName": "./src/components/bing-pushpin-component.vue",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
+                  "module": "./src/components/bing-layer-component.vue",
+                  "moduleName": "./src/components/bing-layer-component.vue",
                   "type": "harmony side effect evaluation",
                   "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
                   "loc": "7:0-90"
@@ -1897,18 +1897,18 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
-                  "module": "./src/components/bing-layer-component.vue",
-                  "moduleName": "./src/components/bing-layer-component.vue",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
+                  "module": "./src/components/bing-pushpin-component.vue",
+                  "moduleName": "./src/components/bing-pushpin-component.vue",
                   "type": "harmony import specifier",
                   "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
                   "loc": "8:16-26"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
-                  "module": "./src/components/bing-pushpin-component.vue",
-                  "moduleName": "./src/components/bing-pushpin-component.vue",
+                  "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
+                  "module": "./src/components/bing-layer-component.vue",
+                  "moduleName": "./src/components/bing-layer-component.vue",
                   "type": "harmony import specifier",
                   "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
                   "loc": "8:16-26"
@@ -3874,15 +3874,6 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-              "type": "harmony side effect evaluation",
-              "userRequest": "../utils.js",
-              "loc": "9:0-32"
-            },
-            {
-              "moduleId": null,
               "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
               "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
               "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-infobox-component.vue?vue&type=script&lang=js&",
@@ -3895,6 +3886,15 @@
               "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
               "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
               "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../utils.js",
+              "loc": "9:0-32"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
               "type": "harmony side effect evaluation",
               "userRequest": "../utils.js",
               "loc": "9:0-32"
@@ -4535,18 +4535,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
               "type": "harmony side effect evaluation",
               "userRequest": "../mixins/component-base.vue",
               "loc": "8:0-57"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-pushpin-component.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib?cacheDirectory=true!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bing-layer-component.vue?vue&type=script&lang=js&",
               "type": "harmony side effect evaluation",
               "userRequest": "../mixins/component-base.vue",
               "loc": "8:0-57"
@@ -5043,18 +5043,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
-              "module": "./src/components/bing-layer-component.vue",
-              "moduleName": "./src/components/bing-layer-component.vue",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
+              "module": "./src/components/bing-pushpin-component.vue",
+              "moduleName": "./src/components/bing-pushpin-component.vue",
               "type": "harmony side effect evaluation",
               "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
               "loc": "7:0-90"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
-              "module": "./src/components/bing-pushpin-component.vue",
-              "moduleName": "./src/components/bing-pushpin-component.vue",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
+              "module": "./src/components/bing-layer-component.vue",
+              "moduleName": "./src/components/bing-layer-component.vue",
               "type": "harmony side effect evaluation",
               "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
               "loc": "7:0-90"
@@ -5088,18 +5088,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
-              "module": "./src/components/bing-layer-component.vue",
-              "moduleName": "./src/components/bing-layer-component.vue",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
+              "module": "./src/components/bing-pushpin-component.vue",
+              "moduleName": "./src/components/bing-pushpin-component.vue",
               "type": "harmony import specifier",
               "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
               "loc": "8:16-26"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-pushpin-component.vue",
-              "module": "./src/components/bing-pushpin-component.vue",
-              "moduleName": "./src/components/bing-pushpin-component.vue",
+              "moduleIdentifier": "/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/Ksullivan1856/Projects/vue-bing-maps/vue-bing-maps/src/components/bing-layer-component.vue",
+              "module": "./src/components/bing-layer-component.vue",
+              "moduleName": "./src/components/bing-layer-component.vue",
               "type": "harmony import specifier",
               "userRequest": "!../../node_modules/vue-loader/lib/runtime/componentNormalizer.js",
               "loc": "8:16-26"
