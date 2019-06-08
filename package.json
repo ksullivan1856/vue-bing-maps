@@ -25,6 +25,10 @@
     "url": "https://github.com/ksullivan1856/vue-bing-maps/issues"
   },
   "homepage": "https://github.com/ksullivan1856/vue-bing-maps#readme",
+  "files": [
+    "src",
+    "dist"
+  ],
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "babel": "^6.23.0",
