@@ -9,17 +9,9 @@ const bannerOptions = {
     banner: 'Vue Bing Maps v' + package.version + ', hash:[hash].  Created by ' + package.author + '. License ' + package.license
 };
 
-module.exports = {
+const config = {
     mode: 'production',
     entry: './src/index.js',
-    plugins: [
-        new StatsWriterPlugin({
-            filename: '../stats.json',
-            fields: null
-        }),
-        new VueLoaderPlugin(),
-        new webpack.BannerPlugin(bannerOptions)
-    ],
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: './dist',
@@ -54,4 +46,35 @@ module.exports = {
             }
         ]
     }
-}
+};
+
+const browserConfig = Object.assign({}, config, {
+    plugins: [
+        new VueLoaderPlugin(),
+        new webpack.BannerPlugin(bannerOptions)
+    ],
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        publicPath: './dist',
+        library: 'VueBingMaps',
+        filename: 'vue-bing-maps-' + package.version + '.js'
+    }
+});
+
+const packageConfig = Object.assign({}, config, {
+    plugins: [
+        new StatsWriterPlugin({
+            filename: '../stats.json',
+            fields: null
+        }),
+        new VueLoaderPlugin(),
+        new webpack.BannerPlugin(bannerOptions)
+    ],
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        publicPath: './dist',
+        filename: 'index.js'
+    }
+});
+
+module.exports = [ browserConfig, packageConfig ];
