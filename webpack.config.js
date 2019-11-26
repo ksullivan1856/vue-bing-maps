@@ -1,12 +1,16 @@
-var path = require('path');
-var package = require('./package.json');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 const { StatsWriterPlugin } = require('webpack-stats-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const {
+    version: pVersion,
+    author: pAuthor,
+    license: pLicense
+} = require('./package.json');
 
 const bannerOptions = {
     entryOnly: true,
-    banner: 'Vue Bing Maps v' + package.version + ', hash:[hash].  Created by ' + package.author + '. License ' + package.license
+    banner: `Vue Bing Maps v${pVersion}, hash:[hash].  Created by ${pAuthor}. License ${pLicense}`
 };
 
 const config = {
@@ -14,9 +18,9 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
+        filename: 'vue-bing-maps.js',
         publicPath: './dist',
-        library: 'VueBingMaps',
-        filename: 'vue-bing-maps-' + package.version + '.js'
+        library: 'VueBingMaps'
     },
     resolve: {
         extensions: ['.js', '.vue', '.json'],
@@ -56,9 +60,9 @@ const browserConfig = Object.assign({}, config, {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: './dist',
+        filename: 'vue-bing-maps.js',
         library: 'VueBingMaps',
-        libraryTarget: 'umd',
-        filename: 'vue-bing-maps-' + package.version + '.js'
+        libraryTarget: 'umd'
     }
 });
 
