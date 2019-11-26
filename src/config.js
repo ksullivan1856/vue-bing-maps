@@ -1,4 +1,5 @@
 export default {
-    debug: false,
-    bingApiUrl: 'https://www.bing.com/api/maps/mapcontrol?callback={callback}&key={credentials}'
+    apiUrl: 'https://www.bing.com/api/maps/mapcontrol?callback={callback}&key={credentials}',
+    apiKey: null,
+    debug: false
 }

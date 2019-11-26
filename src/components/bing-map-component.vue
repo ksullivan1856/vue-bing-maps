@@ -33,9 +33,9 @@
         name: 'bing-map',
         mixins: [ComponentBase],
         props: {
-            credentials: {
+            apiKey: {
                 type: String,
-                required: true
+                default: null
             },
             options: {
                 type: Object,
@@ -98,8 +98,8 @@
                 return 'mapInitializeCallback_' + this._uid;
             },
             getMapApiUrl(){
-                var bingMapUrl = Config.bingApiUrl;
-                return bingMapUrl.replace('{callback}', this.getInitCallbackFnName()).replace('{credentials}', this.credentials);                
+                const bingMapUrl = Config.apiUrl;
+                return bingMapUrl.replace('{callback}', this.getInitCallbackFnName()).replace('{credentials}', this.apiKey || Config.apiKey);
             },
             loadApi() {
                 let self = this;
