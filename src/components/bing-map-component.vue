@@ -142,19 +142,14 @@
                     } else if(!self.libLoaded()){
                         reject('This function can only be called after the Bing Map library has been loaded');
                     } else {
-                        let loadedModules = Utils.loadedModules;
-                        if(!loadedModules){
-                            loadedModules = [];
-                            Utils.loadedModules = loadedModules;
-                        }
-                        if(loadedModules.item.indexOf(normalizedName) > -1){
+                        if(Utils.loadedModules.indexOf(normalizedName) > -1){
                             Utils.logger.log('Map module ' + normalizedName + ' already loaded, resolving...');
                             resolve();
                         } else {
                             Microsoft.Maps.loadModule(name, {
                                 callback(){
                                     Utils.logger.log('Map module ' + normalizedName + ' successfully loaded!');
-                                    loadedModules.item.push(normalizedName);
+                                    Utils.loadedModules.push(normalizedName);
                                     resolve();
                                 },
                                 errorCallback(message){
