@@ -61,7 +61,7 @@
                     return {};
                 }
 
-                let source = this.options;
+                let source = Object.assign({}, Config.defaultMapOptions, this.options);
                 let target = {};
 
                 for(var prop in source){
