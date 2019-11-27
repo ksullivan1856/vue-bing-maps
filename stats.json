@@ -2,14 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "31110fd911775fd08888",
+  "hash": "e3b75babdaf60c8a6ffd",
   "assetsByChunkName": {
     "main": "index.js"
   },
   "assets": [
     {
       "name": "index.js",
-      "size": 22065,
+      "size": 22131,
       "chunks": [
         0
       ],
@@ -249,11 +249,11 @@
     },
     {
       "id": 6,
-      "identifier": "/Users/fran/Projects/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/fran/Projects/vue-bing-maps/src/index.js 86fbd7bbcfca67f7dcb714673fd443a0",
+      "identifier": "/Users/fran/Projects/vue-bing-maps/node_modules/babel-loader/lib/index.js?cacheDirectory=true!/Users/fran/Projects/vue-bing-maps/src/index.js 117f68357167650f3fd4a16fdc6e1493",
       "name": "./src/index.js + 27 modules",
       "index": 0,
       "index2": 33,
-      "size": 32899,
+      "size": 32987,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -295,7 +295,7 @@
           "name": "./src/config.js",
           "index": 7,
           "index2": 6,
-          "size": 130,
+          "size": 169,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -561,8 +561,8 @@
         },
         {
           "id": null,
-          "identifier": "/Users/fran/Projects/vue-bing-maps/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/fran/Projects/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/fran/Projects/vue-bing-maps/src/components/bing-map-component.vue?vue&type=template&id=74c72573&",
-          "name": "./src/components/bing-map-component.vue?vue&type=template&id=74c72573&",
+          "identifier": "/Users/fran/Projects/vue-bing-maps/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/fran/Projects/vue-bing-maps/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/fran/Projects/vue-bing-maps/src/components/bing-map-component.vue?vue&type=template&id=4e297a3d&",
+          "name": "./src/components/bing-map-component.vue?vue&type=template&id=4e297a3d&",
           "index": 15,
           "index2": 14,
           "size": 216,
