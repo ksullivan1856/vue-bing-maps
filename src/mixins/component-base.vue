@@ -11,11 +11,13 @@
                  *              an underscore (_) or a dollar sign ($), we will take advantage of this since proxying this
                  *              type of object will KILL the browser and application.
                  */
+                // eslint-disable-next-line vue/no-reserved-keys
                 __item: null,
                 /**
                  * @property __itemHandlers
                  * @description Used to store the event handler ids for all events registered to the Bing Map entity object
                  */
+                // eslint-disable-next-line vue/no-reserved-keys
                 __itemHandlers: [],
                 itemType: null,
                 initialized: false,

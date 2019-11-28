@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <slot v-if="initialized"></slot>
-    </div>
+  <div>
+    <slot v-if="initialized" />
+  </div>
 </template>
 
 <script>
@@ -19,7 +19,7 @@
     import Utils from '../utils.js';
 
     export default {
-        name: 'bing-map-layer',
+        name: 'BingMapLayer',
         mixins: [ComponentBase],
         props: {
             name: {
@@ -66,6 +66,15 @@
                 getLayer: this.getItem
             };
         },
+        mounted(){
+            Utils.logger.log('mounted lifecycle hook, rendering layer' + this.name + '...');
+            this.render();
+            this.registerEvents();
+        },
+        beforeDestroy(){
+            Utils.logger.log('beforeDestroy lifecycle hook, destroying layer ' +  this.name + '...');
+            this.destroy();
+        },
         methods: {
             render(){
                 let layer = this.getItem();
@@ -111,15 +120,6 @@
                     this.setItem(null);
                 }
             }
-        },
-        mounted(){
-            Utils.logger.log('mounted lifecycle hook, rendering layer' + this.name + '...');
-            this.render();
-            this.registerEvents();
-        },
-        beforeDestroy(){
-            Utils.logger.log('beforeDestroy lifecycle hook, destroying layer ' +  this.name + '...');
-            this.destroy();
         }
     }
 </script>

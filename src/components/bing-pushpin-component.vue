@@ -1,7 +1,10 @@
 <template>
-    <div ref="pinTemplate">
-        <slot v-if="initialized" v-bind:metadata="metadata"></slot>
-    </div>
+  <div ref="pinTemplate">
+    <slot
+      v-if="initialized"
+      :metadata="metadata"
+    />
+  </div>
 </template>
 
 <script>
@@ -23,7 +26,7 @@
     import BingConversions from '../services/bing-conversions.js'
 
     export default {
-        name: 'bing-map-pushpin',
+        name: 'BingMapPushpin',
         mixins: [ComponentBase],
         props: {
             options: {
@@ -95,6 +98,21 @@
             }
         },
         inject: ['getLayer'],
+        mounted(){
+            Utils.logger.log('mounted lifecycle hook, rendering push-pin' + this._uid + '...');
+            this.render();
+        },
+        beforeUpdate(){
+            Utils.logger.log('beforeUpdate lifecycle hook, pin ' + this._uid);
+        },
+        updated(){
+            Utils.logger.log('updated lifecycle hook, pin '+ this._uid + ' updating icon...');
+            this.updateIcon();
+        },
+        beforeDestroy(){
+            Utils.logger.log('beforeDestroy lifecycle hook, destroying push-pin ' +  this._uid + '...');
+            this.destroy();
+        },
         methods: {
             hasIconTemplate(){
                 return !!(this.$slots && this.$slots.default && this.$slots.default.length);
@@ -144,21 +162,6 @@
                     this.setItem(null);
                 }
             }
-        },
-        mounted(){
-            Utils.logger.log('mounted lifecycle hook, rendering push-pin' + this._uid + '...');
-            this.render();
-        },
-        beforeUpdate(){
-            Utils.logger.log('beforeUpdate lifecycle hook, pin ' + this._uid);
-        },
-        updated(){
-            Utils.logger.log('updated lifecycle hook, pin '+ this._uid + ' updating icon...');
-            this.updateIcon();
-        },
-        beforeDestroy(){
-            Utils.logger.log('beforeDestroy lifecycle hook, destroying push-pin ' +  this._uid + '...');
-            this.destroy();
         }
     }
 </script>

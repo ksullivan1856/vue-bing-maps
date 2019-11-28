@@ -1,9 +1,9 @@
 <template>
-    <div ref="mapContainer">
-        <div style="display: none;">
-            <slot v-if="initialized"></slot>
-        </div>
+  <div ref="mapContainer">
+    <div style="display: none;">
+      <slot v-if="initialized" />
     </div>
+  </div>
 </template>
 
 <script>
@@ -30,7 +30,7 @@
     import BingConversions from '../services/bing-conversions.js'
 
     export default {
-        name: 'bing-map',
+        name: 'BingMap',
         mixins: [ComponentBase],
         props: {
             apiKey: {
@@ -89,6 +89,31 @@
                 getMap: this.getItem,
                 loadModule: this.loadModule
             };
+        },
+        mounted(){
+            Utils.logger.log('mounted lifecycle hook, rendering map...');
+            this.draw();
+        },
+        beforeDestroy(){
+            Utils.logger.log('beforeDestroy lifecycle hook, destroying map...');
+            let self = this;
+            self.destroying = true;
+            self.unRegisterEvents().then(self.destroy).finally(() => {
+                self.destroying = false;
+            });
+        },
+        activated(){
+            Utils.logger.log('map activated lifecycle hook, checking criteria for rendering map...');
+            if(!this.rendering && !this.getItem()){
+                Utils.logger.log('map component activated from deactivated state, rendering map...');
+                this.draw();
+            } else {
+                Utils.logger.log('map component activated from initial mounted stated, no action performed here since already performed in mounted hook');
+            }
+        },
+        deactivated(){
+            Utils.logger.log('deactivated lifecyle hook, destroying map...');
+            this.unRegisterEvents().then(this.destroy);
         },
         methods: {
             libLoaded() {
@@ -206,31 +231,6 @@
                     this.setItem(null);
                 }
             }
-        },
-        mounted(){
-            Utils.logger.log('mounted lifecycle hook, rendering map...');
-            this.draw();
-        },
-        beforeDestroy(){
-            Utils.logger.log('beforeDestroy lifecycle hook, destroying map...');
-            let self = this;
-            self.destroying = true;
-            self.unRegisterEvents().then(self.destroy).finally(() => {
-                self.destroying = false;
-            });
-        },
-        activated(){
-            Utils.logger.log('map activated lifecycle hook, checking criteria for rendering map...');
-            if(!this.rendering && !this.getItem()){
-                Utils.logger.log('map component activated from deactivated state, rendering map...');
-                this.draw();
-            } else {
-                Utils.logger.log('map component activated from initial mounted stated, no action performed here since already performed in mounted hook');
-            }
-        },
-        deactivated(){
-            Utils.logger.log('deactivated lifecyle hook, destroying map...');
-            this.unRegisterEvents().then(this.destroy);
         }
     }
 </script>

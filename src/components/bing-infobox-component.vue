@@ -1,10 +1,14 @@
 <template>
-    <div ref="infoboxContainer">
-        <slot></slot>
-    </div>
+  <div ref="infoboxContainer">
+    <slot />
+  </div>
 </template>
 
 <script>
+    import ComponentBase from '../mixins/component-base.vue';
+    import Utils from '../utils.js';
+    import BingConversions from '../services/bing-conversions.js'
+
     const infoboxEvents = Object.freeze([
         'click', 
         'infoboxChanged', 
@@ -12,12 +16,8 @@
         'mouseleave'
     ]);
 
-    import ComponentBase from '../mixins/component-base.vue';
-    import Utils from '../utils.js';
-    import BingConversions from '../services/bing-conversions.js'
-
     export default {
-        name: 'bing-map-infobox',
+        name: 'BingMapInfobox',
         mixins: [ComponentBase],
         props: {
             options: {
@@ -44,6 +44,18 @@
                 }
             }
         },
+        mounted(){
+            Utils.logger.log('mounted lifecycle hook, rendering infobox' + this._uid + '...');
+            this.render();
+        },
+        updated(){
+            Utils.logger.log('updated lifecycle hook, infobox '+ this._uid + ' updating infobox HTML...');
+            this.setCustomHtml();
+        },
+        beforeDestroy(){
+            Utils.logger.log('beforeDestroy lifecycle hook, destroying infobox ' +  this._uid + '...');
+            this.destroy();
+        },
         methods: {
             hasHtmlTemplate(){
                 return !!(this.$slots && this.$slots.default && this.$slots.default.length);
@@ -64,7 +76,7 @@
                                     options.offset = BingConversions.toMapPoint(options.offset);
                                 }
                                 break;
-                        }                            
+                        }
                     }
                 }
 
@@ -119,18 +131,6 @@
                     this.setItem(null);
                 }
             }
-        },
-        mounted(){
-            Utils.logger.log('mounted lifecycle hook, rendering infobox' + this._uid + '...');
-            this.render();
-        },
-        updated(){
-            Utils.logger.log('updated lifecycle hook, infobox '+ this._uid + ' updating infobox HTML...');
-            this.setCustomHtml();
-        },
-        beforeDestroy(){
-            Utils.logger.log('beforeDestroy lifecycle hook, destroying infobox ' +  this._uid + '...');
-            this.destroy();
         }
     }
 </script>
